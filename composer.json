@@ -1,0 +1,18 @@
+{
+    "name": "asasmoyo/yii2-sentry",
+    "description": "Yii 2 plugin to integrate Yii 2 application with sentry",
+    "require": {
+        "yiisoft/yii2": "^2.0"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "^5.4"
+    },
+    "license": "MIT Licence",
+    "authors": [
+        {
+            "name": "Arba Sasmoyo",
+            "email": "asasmoyo@student.uns.ac.id"
+        }
+    ],
+    "minimum-stability": "stable"
+}
