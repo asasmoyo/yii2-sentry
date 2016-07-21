@@ -3,12 +3,12 @@
 namespace asasmoyo\yii2sentry\tests;
 
 use asasmoyo\yii2sentry\Sentry;
-use PHPUnit\Framework\TestCase;
+use PHPUnit_Framework_TestCase;
 use Yii;
 use yii\base\InvalidConfigException;
 use yii\web\Application;
 
-class SentryTest extends TestCase
+class SentryTest extends PHPUnit_Framework_TestCase
 {
     private function getDummyConfig()
     {
@@ -38,7 +38,7 @@ class SentryTest extends TestCase
 
     public function testEmptyDsn()
     {
-        $this->expectException(InvalidConfigException::class);
+        $this->setExpectedException(InvalidConfigException::class);
 
         $sentry = new Sentry([
             'enabled' => true,
